@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Slum Condition Simulation</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="simulation-controls">
+            <h2>Simulation Controls</h2>
+            <form id="simulation-form">
+                <label for="intervention-type">Intervention Type:</label>
+                <select id="intervention-type" required>
+                    <option value="">Select an intervention...</option>
+                    <option value="housing">Housing Improvement</option>
+                    <option value="sanitation">Sanitation Upgrade</option>
+                    <option value="education">Education Program</option>
+                </select>
+
+                <label for="population-density">Population Density:</label>
+                <input type="number" id="population-density" placeholder="Enter population density" required>
+
+                <button type="submit">Run Simulation</button>
+            </form>
+        </section>
+
+        <section id="results">
+            <h2>Results</h2>
+            <div id="results-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Slum Condition Simulation. All rights reserved.</p>
+    </footer>
+
+    <script src="ui_components.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
